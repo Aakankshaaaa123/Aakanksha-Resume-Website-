@@ -1,0 +1,327 @@
+/* A quiet palette and simple layout keep the focus on the resume content. */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f5f0;
+    color: #29352f;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 7%;
+    border-bottom: 1px solid #e4e2d9;
+}
+
+.wordmark {
+    color: #526b5d;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+}
+
+.wordmark span {
+    color: #bd8d73;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+}
+
+nav a,
+.site-footer a {
+    text-decoration: none;
+}
+
+nav a:hover,
+.site-footer a:hover,
+.text-link:hover {
+    color: #8b6c55;
+}
+
+.contact-link {
+    padding: 8px 13px;
+    border: 1px solid #b8c2b6;
+    border-radius: 20px;
+}
+
+.section-wrap {
+    width: min(1080px, 86%);
+    margin: 0 auto;
+}
+
+.intro {
+    position: relative;
+    padding: 104px 0 96px;
+}
+
+.intro-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.intro-copy-block {
+    flex: 1;
+}
+
+.photo-frame {
+    flex: 0 0 300px;
+    margin: 0;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    height: 365px;
+    object-fit: cover;
+    object-position: center 28%;
+    border-radius: 6px;
+}
+
+.photo-frame figcaption {
+    margin-top: 10px;
+    color: #7a8179;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+.eyebrow,
+.date,
+.card-label {
+    color: #7c8c7e;
+    font-family: Arial, sans-serif;
+    font-size: 0.69rem;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+}
+
+.intro h1 {
+    margin: 14px 0 22px;
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 0.92;
+}
+
+.intro h1 span {
+    color: #748878;
+    font-style: italic;
+}
+
+.intro-copy {
+    max-width: 490px;
+    color: #58645c;
+    font-size: 1.15rem;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #526b5d;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.intro-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    max-width: 540px;
+    margin-top: 34px;
+    color: #7a8179;
+    font-size: 0.9rem;
+}
+
+.intro-note p {
+    margin: 0;
+}
+
+.note-line {
+    flex: 0 0 28px;
+    margin-top: 13px;
+    border-top: 1px solid #bd8d73;
+}
+
+.education,
+.experience,
+.beyond {
+    padding: 76px 0;
+    border-top: 1px solid #e4e2d9;
+}
+
+.section-heading h2 {
+    max-width: 620px;
+    margin: 8px 0 34px;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: normal;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+}
+
+.education-list {
+    border-top: 1px solid #dcded5;
+}
+
+.education-item {
+    display: flex;
+    gap: 48px;
+    padding: 25px 0;
+    border-bottom: 1px solid #dcded5;
+}
+
+.date {
+    flex: 0 0 190px;
+    margin: 7px 0 0;
+    letter-spacing: 0.08em;
+}
+
+.education-item h3,
+.experience-card h3 {
+    margin: 0 0 4px;
+    font-size: 1.35rem;
+    font-weight: normal;
+}
+
+.education-item p,
+.experience-card p {
+    margin: 4px 0;
+    color: #69746c;
+}
+
+.education-item .institution {
+    color: #526b5d;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.experience-card {
+    flex: 1 1 250px;
+    min-height: 205px;
+    padding: 25px;
+    background-color: #eeeee7;
+}
+
+.card-label {
+    margin: 0 0 19px;
+    color: #9a806a;
+    font-size: 0.62rem;
+}
+
+.experience-card h3 {
+    font-size: 1.2rem;
+}
+
+.experience-card p:last-child {
+    font-size: 0.94rem;
+}
+
+.beyond-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.beyond-content p {
+    max-width: 350px;
+    color: #69746c;
+}
+
+.beyond-content .large-copy {
+    margin: 0;
+    color: #526b5d;
+    font-size: 1.55rem;
+    line-height: 1.45;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 7%;
+    background-color: #e9ebe4;
+    color: #58645c;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.site-footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .site-header,
+    .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .intro {
+        padding: 76px 0 56px;
+    }
+
+    .intro-layout {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .photo-frame {
+        width: min(100%, 300px);
+        flex: initial;
+    }
+
+    .intro-note {
+        max-width: 320px;
+        margin-top: 26px;
+    }
+
+    .education-item,
+    .beyond-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .date {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+}
